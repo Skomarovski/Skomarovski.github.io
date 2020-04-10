@@ -352,7 +352,8 @@ a:active {
 .page-content {
 	display: flex;
 	justify-content: space-between;
-	padding: 54px 0 82px 0;
+	padding-top: 54px;
+	padding-bottom: 82px;
 }
 
 	.page-body {
