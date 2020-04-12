@@ -84,10 +84,29 @@ p {
 
 .link_style_light:active {
 	color: #d3d640;
+	transition-duration: 0.2s;
+}
+
+.link_style_dark:link, .link_style_dark:visited {
+	color: #2539ed;
+}
+
+.link_style_dark:hover {
+	color: #4959ed;
+}
+
+.link_style_dark:active {
+	color: #3e4cc9;
+	transition-duration: 0.2s;
+}
+
+.just-link {
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .content {
-	padding-top: 70px;
+	padding: 70px 15px;
 }
 
 	.content__h1-title {
@@ -121,8 +140,20 @@ p {
 		margin-top: 6px;
 	}
 
-	.content__news-edit {
-		
+	.content__edit-news {
+		width: 25px;
+		height: 25px;
+		margin: 6px 5px 0 0;
+	}
+
+	.content__delete-news {
+		width: 25px;
+		height: 25px;
+		margin-top: 6px;
+	}
+
+	.content__more {
+		margin-top: 5px;
 	}
 
 .title {
@@ -140,7 +171,7 @@ p {
 
 	.news-block__img-block {
 		width: 50%;
-		padding: 20px 10px 20px 20px;
+		margin: 20px 10px 20px 20px;
 	}
 
 	.news-block__img {
@@ -163,7 +194,7 @@ p {
 	}
 
 	.news-block__meta {
-		margin-top: 10px;
+		margin-top: 15px;
 	}
 
 	.news-block__meta:before {
@@ -181,8 +212,17 @@ p {
 		margin-bottom: 5px;
 	}
 
+	.news-block__edit-bar {
+		padding-top: 25px;
+	}
+
 	.news-block__data {
 		font-size: 12px;
+	}
+
+	.news-block__footer {
+		display: flex;
+		justify-content: space-between;
 	}
 
 .add-news {
@@ -193,6 +233,28 @@ p {
 
 .add-news:hover {
 	background-image: url("../img/add-hover.svg");
+}
+
+.edit-news {
+	display: inline-block;
+	background-image: url("../img/edit.svg");
+	box-shadow:0px 1px 1px 2px rgba(0,0,0,0.05);
+	border-radius: 2px;
+}
+
+.edit-news:hover {
+	background-image: url("../img/edit-hover.svg");
+}
+
+.delete-news {
+	display: inline-block;
+	background-image: url("../img/delete.svg");
+	box-shadow:0px 1px 1px 2px rgba(0,0,0,0.05);
+	border-radius: 2px;
+}
+
+.delete-news:hover {
+	background-image: url("../img/delete-hover.svg");
 }
 
 .sign-in-btn {
@@ -212,7 +274,7 @@ p {
 }
 
 .topic {
-	display: inline-block;block;
+	display: inline-block;
 	border: 1px solid #eff24b;
 	padding: 0 10px;
 	border-radius: 5px;
@@ -229,10 +291,30 @@ p {
 }
 
 .author {
+	display: inline-block;
 	font-family: 'Roboto', sans-serif;
 }
 
 .data {
 	font-family: 'Roboto', sans-serif;
 	color: #5e5e5e;
+}
+
+.more {
+	display: inline-block;
+	font-family: 'Lora', serif;
+}
+
+.copyright {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	color: #c1c1c1;
+	line-height: 100px;
+	text-align: center;
+}
+
+.page-footer {
+	height: 100px;
+	background-color: #262626;
+	box-shadow:0px -3px 3px 1px rgba(0,0,0,0.1);
 }
